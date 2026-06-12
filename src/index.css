@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+.theme-light {
+  color-scheme: light;
+  background: #eef3f8;
+  color: #0f172a;
+}
+
+.theme-light .app-topbar,
+.theme-light .app-left-rail,
+.theme-light .app-panel-card,
+.theme-light .app-right-panel {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: #d9e2ee !important;
+  color: #0f172a !important;
+}
+
+.theme-light .canvas-shell {
+  background: #eef3f8 !important;
+}
+
+.theme-light .topbar-action,
+.theme-light .rail-button,
+.theme-light .app-search-input,
+.theme-light .app-card,
+.theme-light .app-error-toggle {
+  background: #ffffff !important;
+  border-color: #d9e2ee !important;
+  color: #0f172a !important;
+}
+
+.theme-light .topbar-action:hover,
+.theme-light .rail-button:hover,
+.theme-light .app-card:hover {
+  background: #f3f7fb !important;
+}
+
+.theme-light .service-node-card {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: #cbd7e6 !important;
+  color: #0f172a !important;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12) !important;
+}
+
+.theme-light .service-node-card p,
+.theme-light .service-node-card label,
+.theme-light .app-panel-card p {
+  color: #475569 !important;
+}
+
+.theme-light .node-tabs-list {
+  background: #e8eef7 !important;
+  color: #334155 !important;
+}
+
+.theme-light .node-config-panel,
+.theme-light .right-panel-content [class*="bg-zinc-950"],
+.theme-light .right-panel-content [class*="bg-zinc-900"],
+.theme-light .right-panel-content [class*="bg-black"],
+.theme-light .service-node-card input,
+.theme-light .service-node-card textarea,
+.theme-light .service-node-card [class*="bg-[#050608]"],
+.theme-light .service-node-card [class*="bg-black"] {
+  background: #f8fafc !important;
+  border-color: #d9e2ee !important;
+  color: #0f172a !important;
+}
+
+.theme-light .react-flow__pane {
+  background: #eef3f8;
+}
+
+.theme-light .react-flow__edge-path {
+  stroke: #7c8da3;
+}
