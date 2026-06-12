@@ -2,6 +2,9 @@
 
 A modern, responsive **App Graph Builder** UI built with React, Vite, Tailwind CSS, TypeScript, ReactFlow (xyflow), Zustand, and TanStack Query. It allows users to visualize, select, configure, and manage service topologies (API, Database, Cache, Worker nodes) across different applications.
 
+*   🔗 **GitHub Repository**: [https://github.com/Kiran6976/Frontend_Task.git](https://github.com/Kiran6976/Frontend_Task.git)
+*   🌐 **Live Demo (Vercel)**: [https://frontend-task-liart-six.vercel.app/](https://frontend-task-liart-six.vercel.app/)
+
 ---
 
 ## 🚀 Getting Started
@@ -13,7 +16,7 @@ Ensure you have **Node.js** (v18.x or later) and **npm** installed on your syste
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Kiran6976/Frontend_Task.git
    cd reactflow-canvas
    ```
 
@@ -26,13 +29,13 @@ Ensure you have **Node.js** (v18.x or later) and **npm** installed on your syste
    ```bash
    npm run dev
    ```
-   The application will start locally. Open your browser and navigate to the displayed URL (typically `http://localhost:5173`).
+   Open your browser and navigate to the displayed URL (typically `http://localhost:5173`).
 
 ---
 
 ## 🛠️ Available Scripts
 
-In the project directory, you can run the following scripts:
+In the project directory, you can run:
 
 *   `npm run dev`: Starts the local Vite development server with Hot Module Replacement (HMR).
 *   `npm run build`: Compiles TypeScript and builds the production-ready bundle into the `dist` directory.
@@ -47,7 +50,7 @@ In the project directory, you can run the following scripts:
 1. **Zustand for UI & Graph State Management**
    *   **Separation of Concerns**: UI states (selected app, selected node, mobile drawer visibility, active inspector tab) are stored in `appStore`. ReactFlow node and edge states are stored in `graphStore`.
    *   **Minimal Render Footprint**: Zustand selectors ensure components only re-render when their specific slices of state change, preventing unnecessary renders.
-   *   **Node Modifications**: Updates made in the inspector are instantly persisted directly to the selected node's `data` block, which reacts in real-time.
+   *   **Real-time Node Modifications**: Updates made in the inspector are instantly persisted directly to the selected node's `data` block, which reacts in real-time.
 
 2. **TanStack Query for Data Fetching & Cache Management**
    *   **Automatic Cache Invalidation**: Query results are cached and refetched automatically when the selected `appId` changes. Toggling the "Mock Error" switch invalidates the cache and forces a reload to demonstrate error boundaries.
@@ -67,7 +70,6 @@ In the project directory, you can run the following scripts:
 
 ## ⌨️ Keyboard Shortcuts
 
-We've added global keyboard shortcuts that enhance canvas usability:
 *   Press **`F`** or **`f`**: Fits the canvas layout centered on the screen (`fitView`).
 *   Press **`P`** or **`p`**: Toggles the visibility of the left Application list panel.
 *   Press **`Delete`** or **`Backspace`**: Deletes the selected service node (including all connected edges).
@@ -83,9 +85,9 @@ We've added global keyboard shortcuts that enhance canvas usability:
 
 ---
 
-## 🌐 Deployment (Vercel / Cloudflare)
+## 🌐 Deployment Settings (Vercel)
 
-This project can be deployed easily to **Vercel** or **Cloudflare Pages**:
+This project is deployed to **Vercel** with the following build configurations:
 *   **Framework Preset**: `Vite`
 *   **Build Command**: `npm run build`
 *   **Output Directory**: `dist`
